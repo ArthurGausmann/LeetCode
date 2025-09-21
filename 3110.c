@@ -1,6 +1,7 @@
 // 3110.
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int scoreOfString(char* s) {
     int score = 0;
@@ -10,4 +11,11 @@ int scoreOfString(char* s) {
         }
     }
     return score;
+}
+
+int main() {
+    char* palavra = "guanabara";
+    printf( "%d\n", scoreOfString(palavra) );
+
+    return 0;
 }
