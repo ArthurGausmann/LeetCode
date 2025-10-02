@@ -1,7 +1,8 @@
-// 3110.
-
-#include <stdlib.h>
-#include <stdio.h>
+/*
+3110.
+You are given a string s. The score of a string is defined as the sum of the absolute difference between the ASCII values of adjacent characters.
+Return the score of s.
+*/
 
 int scoreOfString(char* s) {
     int score = 0;
@@ -11,11 +12,4 @@ int scoreOfString(char* s) {
         }
     }
     return score;
-}
-
-int main() {
-    char* palavra = "guanabara";
-    printf( "%d\n", scoreOfString(palavra) );
-
-    return 0;
 }
